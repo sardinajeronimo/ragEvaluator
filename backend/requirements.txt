@@ -1,0 +1,7 @@
+# This file contains the Python dependencies for the backend application.
+
+fastapi
+uvicorn[standard]
+pydantic
+openai
+python-dotenv
