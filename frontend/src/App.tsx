@@ -629,7 +629,7 @@ ${JSON.stringify(shareData, null, 2)}`;
         // Aplicar color a la celda del Juicio Final
         const cellAddress = `N${rowNum}`;
         if (!worksheet[cellAddress]) worksheet[cellAddress] = {};
-
+  
         // Definir estilo según PASS/FAIL
         if (result.juicio_final === 'PASS') {
           worksheet[cellAddress].s = {
