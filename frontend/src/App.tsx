@@ -681,11 +681,16 @@ ${JSON.stringify(shareData, null, 2)}`;
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-100 p-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <header className="mb-8 text-center">
-          <h1 className="text-4xl font-bold text-white mb-3 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-            RAG Evaluator
-          </h1>
-          <p className="text-gray-400 text-lg">Sistema de evaluación automatizado para chatbots y sistemas RAG</p>
+        <header className="mb-8">
+          <div className="flex items-center gap-4 mb-4">
+            <img src="/logoIGV.png" alt="IGV Logo" className="h-16 w-auto" />
+            <div className="flex-1">
+              <h1 className="text-4xl font-bold text-white mb-2 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                RAG Evaluator
+              </h1>
+              <p className="text-gray-400 text-lg">Sistema de evaluación automatizado para chatbots y sistemas RAG</p>
+            </div>
+          </div>
         </header>
 
         {/* El resto de la UI está muy bien estructurada. 
@@ -749,7 +754,7 @@ ${JSON.stringify(shareData, null, 2)}`;
           {/* OpenAI API Key */}
           <div className="mb-4">
             <label className="block text-sm font-medium text-gray-300 mb-2">
-              OpenAI API Key <span className="text-red-400">*</span>
+              API Key de LLM  <span className="text-red-400">*</span>
             </label>
             <input
               type="password"
